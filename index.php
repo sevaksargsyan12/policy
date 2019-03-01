@@ -483,7 +483,7 @@ function generate_shortcode_admin() {
 add_action( 'wp_ajax_admin_shortcode_action', 'generate_shortcode_admin' );
 
 
-/*** AJAX  REQUESTS FROM FRONT END ***/
+/*** AJAX REQUESTS FROM FRONT END ***/
 
 function gen_front_html_ajax() {
 
