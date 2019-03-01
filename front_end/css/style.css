@@ -1,0 +1,112 @@
+.-pap-wrapper  {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.-pap-wrapper form {
+    width: 100%;
+}
+.-pap-wrapper form > div {
+    margin-bottom: 10px;
+}
+-pap-wrapper .none {
+    display: none;
+}
+.-pap-wrapper .-pap-header-form label {
+    width: 100%;
+    text-align: left;
+}
+.fade:not(.show) {
+    opacity: 1 !important;
+}
+.-pap-wrapper .-pap-body-sidebar ul li {
+    width: 100%;
+    display: block;
+}
+.-pap-wrapper .-pap-body-sidebar ul li a {
+    text-decoration: none;
+    font-size: 14px;
+}
+.-pap-wrapper .-pap-body-sidebar ul li.active a {
+    font-weight: bold;
+}
+
+/*** Modal ***/
+.-pap-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.-pap-overlay .-pap-html-content {
+    width: 80%;
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+}
+#-pap-rendered-text {
+    padding: 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+    margin-top: 30px;
+    background: #efecec;
+    font-size: 16px;
+}
+#-pap-rendered-html {
+    margin-top: 30px;
+    padding: 10px;
+    height: auto;
+    overflow: hidden;
+    background: #efecec;
+    font-size: 16px;
+}
+#-pap-rendered-html textarea {
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-height: 200px;
+}
+.-pap-overlay .-pap-html-content .-pap-modal-close {
+    color: red;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+}
+.-pap-wrapper input[type=checkbox],.-pap-wrapper input[type=radio] {
+    border: 1px solid #b4b9be;
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 16px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0!important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    transition: .05s border-color ease-in-out;
+}
+.-pap-wrapper input[type=checkbox]:checked:before {
+    content: "\f147";
+    margin: -3px 0 0 -4px;
+    color: #1e8cbe;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    font: normal 21px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+}
